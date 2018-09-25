@@ -1,0 +1,94 @@
+<ion-view title="ข้อมูลเยี่ยมบ้าน" id="page8">
+  <ion-content padding="true" class="has-header">
+    <div>
+      <img src="img/head.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+    <div class="spacer" style="height: 20px;"></div>
+    <div id="page8-markdown15" class="show-list-numbers-and-dots">
+
+    <p style="color:#000000;">ปีกี่ออกเยี่อมบ้าน</p>
+    </div>
+    <form id="page8-form5" class="list">
+      <label class="item item-input" id="page8-textarea1">
+        <span class="input-label"></span><textarea placeholder="ปีการศึกษา เช่น(1/2559)" ng-model="usr.year"></textarea></label>
+    </form>
+      <p style="color:#000000;">เพื่อนสนิทของผู้เรียน คือ </p>
+    </div>
+    <form id="page8-form5" class="list">
+      <label class="item item-input" id="page8-textarea1">
+        <span class="input-label"></span><textarea placeholder="ชื่อเพื่อนสนิท" ng-model="usr.as2"></textarea></label>
+    </form>
+    <div id="page8-markdown16" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">หมายเลขโทรศัพท์ติดต่อ</p>
+    </div>
+    <form id="page8-form9" class="list">
+      <label class="item item-input" id="page8-textarea2">
+        <span class="input-label"></span><textarea placeholder="หมายเลขโทรศัพท์" ng-model="usr.as3"></textarea></label>
+      <div class="spacer" style="height: 20px;"></div>
+      <div style="margin-right:-20px;">
+        <button id="page8-button10" style="left:-10px;border-radius:-5px -5px -5px -5px;" class="button button-calm  button-full">ผู้เรียนดื่มเครื่องดื่มแอลกอฮอล์</button>
+      </div>
+      <ion-radio id="page8-radio10" name="1" ng-model="usr.as4" value="ดื่มบ่อยๆ">ดื่มบ่อยๆ</ion-radio>
+      <ion-radio id="page8-radio12" name="1" ng-model="usr.as4" value="ดื่มแต่ไม่บ่อย">ดื่มแต่ไม่บ่อย</ion-radio>
+      <ion-radio id="page8-radio13" name="1" ng-model="usr.as4" value="นานๆครั้ง">นานๆครั้ง</ion-radio>
+      <ion-radio id="page8-radio11" name="1" ng-model="usr.as4" value="ไม่เคย">ไม่เคย</ion-radio>
+      <div style="margin-right:-20px;">
+        <button id="page8-button13" style="left:-10px;border-radius:-5px -5px -5px -5px;" class="button button-calm  button-full">ผู้เรียนออกเที่ยวกลางคืน</button>
+      </div>
+      <ion-radio id="page8-radio5" name="2" ng-model="usr.as5" value=บ่อยๆ"">บ่อยๆ</ion-radio>
+      <ion-radio id="page8-radio6" name="2" ng-model="usr.as5" value="ไม่บ่อย">ไม่บ่อย</ion-radio>
+      <ion-radio id="page8-radio7" name="2" ng-model="usr.as5" value="นานๆครั้ง">นานๆครั้ง</ion-radio>
+      <ion-radio id="page8-radio2" name="2" ng-model="usr.as5" value="ไม่เคย">ไม่เคย</ion-radio>
+      <div style="margin-right:-20px;">
+        <button id="page8-button23" style="left:-10px;border-radius:-5px -5px -5px -5px;" class="button button-calm  button-full">นักเรียนมีเพื่อนต่างเพศมาหาหรือไปด้วยกัน</button>
+      </div>
+      <ion-radio id="page8-radio14" name="3" ng-model="usr.as6" value="บ่อยๆ">บ่อยๆ</ion-radio>
+      <ion-radio id="page8-radio17" name="3" ng-model="usr.as6" value="ไม่บ่อย">ไม่บ่อย</ion-radio>
+      <ion-radio id="page8-radio18" name="3" ng-model="usr.as6" value="นานๆครั้ง">นานๆครั้ง</ion-radio>
+      <ion-radio id="page8-radio19" name="3" ng-model="usr.as6" value="ไม่มี">ไม่มี</ion-radio>
+      <div style="margin-right:-20px;">
+        <button id="page8-button24" style="left:-10px;border-radius:-5px -5px -5px -5px;" class="button button-calm  button-full">นักศึกษาสูบบุหรี่หรือไม่</button>
+      </div>
+      <ion-radio id="page8-radio20" name="4" ng-model="usr.as7" value="สูบบ่อยๆ">สูบบ่อยๆ</ion-radio>
+      <ion-radio id="page8-radio21" name="4" ng-model="usr.as7" value="สูบไม่บ่อย">สูบไม่บ่อย</ion-radio>
+      <ion-radio id="page8-radio22" name="4" ng-model="usr.as7" value="นานๆครั้ง">นานๆครั้ง</ion-radio>
+      <ion-radio id="page8-radio23" name="4" ng-model="usr.as7" value="ไม่สูบ">ไม่สูบ</ion-radio>
+      <div style="margin-right:-20px;">
+        <button id="page8-button25" style="left:-10px;border-radius:-5px -5px -5px -5px;" class="button button-calm  button-full">นักเรียนเล่นเล่นการพนัน</button>
+      </div>
+      <ion-radio id="page8-radio24" name="5" ng-model="usr.as8" value="เล่นบ่อยๆ">เล่นบ่อยๆ</ion-radio>
+      <ion-radio id="page8-radio25" name="5" ng-model="usr.as8" value="เล่นแต่ไม่บ่อย">เล่นแต่ไม่บ่อย</ion-radio>
+      <ion-radio id="page8-radio26" name="5" ng-model="usr.as8" value="นานๆครั้ง">นานๆครั้ง</ion-radio>
+      <ion-radio id="page8-radio27" name="5" ng-model="usr.as8" value="ไม่เล่น">ไม่เล่น</ion-radio>
+      <div style="margin-right:-20px;">
+        <button id="page8-button26" style="left:-10px;border-radius:-5px -5px -5px -5px;" class="button button-calm  button-full">ภาระกิจที่ได้รับมอบหมายกับครอบครัว</button>
+      </div>
+      <ion-radio id="page8-radio28" name="6" ng-model="usr.as9" value="ทำงานบ้าน">ทำงานบ้าน</ion-radio>
+      <ion-radio id="page8-radio29" name="6" ng-model="usr.as9" value="หารายได้ช่วยครอบครัว">หารายได้ช่วยครอบครัว</ion-radio>
+      <ion-radio id="page8-radio30" name="6" ng-model="usr.as9" value="อื่นๆ">อื่นๆ</ion-radio>
+      <div style="margin-right:-20px;">
+        <button id="page8-button14" style="left:-10px;border-radius:-5px -5px -5px -5px;" class="button button-calm  button-full">ความสัมพันธ์กับสมาชิกในครอบครัว</button>
+      </div>
+      <ion-radio id="page8-radio8" name="7"   ng-model="usr.as10" value="ดีมาก">ดีมาก</ion-radio>
+      <ion-radio id="page8-radio9" name="7"   ng-model="usr.as10" value="ดี">ดี</ion-radio>
+      <ion-radio id="page8-radio15" name="7"  ng-model="usr.as10" value="ปานกลาง">ปานกลาง</ion-radio>
+      <ion-radio id="page8-radio16" name="7"  ng-model="usr.as10" value=">น้อย">น้อย</ion-radio>
+      <div style="margin-right:-20px;">
+        <button id="page8-button16" style="left:-10px;border-radius:-5px -5px -5px -5px;" class="button button-calm  button-full">ความคิดเห็นผู้ปกครองที่มีต่อผู้เรียน</button>
+      </div>
+      <label class="item item-input" id="page8-textarea3">
+        <span class="input-label"></span><textarea placeholder="ความคิดเห็น" ng-model="usr.as11"></textarea></label>
+      <div style="margin-right:-20px;">
+        <button id="page8-button17" style="left:-10px;font-size:15px;border-radius:-5px -5px -5px -5px;" class="button button-calm  button-full">ข้อคิดเห็นของครูที่ปรึกษาในการออกเยี่ยมบ้าน</button>
+      </div>
+      <label class="item item-input" id="page8-textarea4">
+        <span class="input-label"></span><textarea placeholder="ความคิดเห็น" ng-model="usr.as12"></textarea></label>
+ <button class="button button-block button-calm" 
+  ng-click="input()"
+  ng-disabled="!usr.as2
+      ||  !usr.as3
+      ||  !usr.as11
+      ||  !usr.as12" type="submit">ยืนยัน</button>
+    </form>
+  </ion-content>
+</ion-view>

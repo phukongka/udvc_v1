@@ -1,0 +1,48 @@
+<ion-view title="ยืนยันการเยี่ยมบ้าน" id="page11">
+  <ion-content padding="true" class="has-header">
+    <div id="page0-markdown22" class="show-list-numbers-and-dots">
+    <div>
+      <img src="img/head.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    </div>
+      
+      <div class="item item-body">
+    <ion-item ng-repeat="x in model_object | filter: searchItem" >
+    <p style="color:#000000;"><center>
+        <strong>ยืนยันการเยี่ยมบ้าน</strong></center>
+      </p>
+    <h2>ปีการศึกษา</h2>
+    <p>{{ x.year}}</p>
+    <img class="full-image" src="http://localhost/ionic_pic/upload/{{ x.picture}}">
+    <h2>ข้อความ</h2>
+    <p>{{ x.title}}</p>
+    
+    <h2>เพื่อนสนิทของผู้เรียน คือ</h2>
+    <p>{{ x.as2}}</p>
+    <h2>หมายเลขโทรศัพท์ติดต่อ</h2>
+    <p>{{ x.as3}}</p>
+    <h2>ผู้เรียนดื่มเครื่องดื่มแอลกอฮอล์</h2>
+    <p>{{ x.as4}}</p>
+    <h2>ผู้เรียนออกเที่ยวกลางคืน</h2>
+    <p>{{ x.as5}}</p>
+    <h2>นักเรียนมีเพื่อนต่างเพศมาหาหรือไปด้วยกัน</h2>
+    <p>{{ x.as6}}</p>
+    <h2>นักศึกษาสูบบุหรี่หรือไม่</h2>
+    <p>{{ x.as7}}</p>
+    <h2>นักเรียนเล่นเล่นการพนัน</h2>
+    <p>{{ x.as8}}</p>
+    <h2>ภาระกิจที่ได้รับมอบหมายกับครอบครัว</h2>
+    <p>{{ x.as9}}</p>
+    <h2>ความสัมพันธ์กับสมาชิกในครอบครัว</h2>
+    <p>{{ x.as10}}</p>
+    <h2>ความคิดเห็นผู้ปกครองที่มีต่อผู้เรียน</h2>
+    <p>{{ x.as11}}</p>
+    <h2>ข้อคิดเห็นของครูที่ปรึกษาในการออกเยี่ยมบ้าน</h2>
+    <p>{{ x.as12}}</p>
+
+
+  </div>
+    </div>
+
+     
+  </ion-content>
+</ion-view>

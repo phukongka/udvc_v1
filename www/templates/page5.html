@@ -1,0 +1,32 @@
+<ion-view view-title="Student" {{loggedin_code}}>
+  <ion-content padding="true" class="has-header">
+    <div id="page5-button-bar9" class="button-bar">
+      <a ui-sref="page" id="page5-button53" class="button button-stable  button-block icon ion-android-bookmark"></a>
+      <a ui-sref="login" id="page5-button54" class="button button-stable  button-block icon ion-android-person"></a>
+      <a ui-sref="page9" id="page5-button55" class="button button-stable  button-block icon ion-ios-help"></a>
+      <button class="button button-block button-calm" 
+  ng-click="logout()"><h4><font color="white">Logout</font></h4></button>
+    <ion-list>
+    </div>
+
+
+      <label class="item item-input"  >
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search" ng-model="searchItem">
+      </label>
+
+      <ion-item ng-repeat="x in model_object | filter: searchItem" >
+        
+  
+      <div harf="page6">
+      <a class="item item-avatar" href="#/page6/{{x.code}}">
+      <img src="img\{{x.img}}">
+      <h2>code : {{ x.code}}</h2>
+      <p> name : {{ x.name}}</p>
+     </a>
+     </div>
+
+    </ion-list>
+
+  </ion-content>
+</ion-view>

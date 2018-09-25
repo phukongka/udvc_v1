@@ -1,0 +1,31 @@
+<ion-view title="ข้อมูลนักศึกษา" id="page6">
+  <ion-content padding="true" class="has-header">
+    <div class="list card">
+  <ion-item ng-repeat="x in model_object | filter: searchItem" >
+  <div class="item item-avatar">
+    <img src="img/{{std_id}}.jpg">
+    <h2>  {{std_id}}</h2>
+    <p> {{x.name}}</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" src="img/{{std_id}}.jpg">
+    <p>
+       ชื่อ  :: {{x.name}} <br>
+       วัน/เดือน/ปี เกิด  :: {{x.birt}}<br>
+       เบอร์ติดต่อ :: {{x.tell1}}<br>
+       แผนก :: {{x.depwork}}
+    </p>
+
+  </div>
+
+</div>
+
+      <a href="#/page8/{{std_id}}" id="page6-button15" class="button button-calm  button-block">กรอกข้อมูลหลังเยี่ยมบ้าน</a>
+      <a href="#/page14/{{std_id}}" id="page6-button15" class="button button-calm  button-block">ถ่ายรูปเยี่ยมบ้าน</a>
+      <a href="#/map" class="button button-calm  button-block icon ion-ios-location"> GPS </a>
+      <a href="#/page0/{{std_id}}" id="page6-button18" class="button button-calm  button-block">ประวัติเยี่ยมบ้าน</a>
+    </div>
+    </div>
+  </ion-content>
+</ion-view>
