@@ -13,8 +13,8 @@ $state.go('page5');
   $scope.doLogin =function(){
     $http(
       {
-       // url: "http://192.168.52.27/ionic_api/login.php",
-        url: "http://localhost/ionic_api/login.php",
+        url: "http://202.29.230.252/ionic_apis/login.php",
+       // url: "http://localhost/ionic_api/login.php",
         method:'post',
             data: {
                   pass: $scope.usr.pass,
@@ -87,7 +87,7 @@ function ($scope, $stateParams) {
 $interval(function(){
      $http(
         {
-        url: "http://localhost/ionic_api/students/list_of_students/list_of_students.php",
+        url: "http://202.29.230.252/ionic_apis/students/list_of_students/list_of_students.php",
         //url: "http://202.29.228.250/ionic_api/login.php",
         method:'post',
             data: {
@@ -140,7 +140,7 @@ $scope.logout=function(){
 .controller('updateStudentCtrl', function($scope, $http, $ionicHistory) {
 
   $scope.updateStudent = function(){
-    $http.post("http://localhost/ionic/CRUD/update_student.php",
+    $http.post("http://202.29.230.252/ionic_apis/CRUD/update_student.php",
       {
         'code':$scope.code,
         'name':$scope.name,
@@ -171,7 +171,7 @@ $scope.logout=function(){
 $interval(function(){
      $http(
         {
-        url: "http://localhost/ionic_api/students/list_of_students/list_of_students2.php",
+        url: "http://202.29.230.252/ionic_apis/students/list_of_students/list_of_students2.php",
         //url: "http://202.29.228.250/ionic_api/login.php",
         method:'post',
             data: {
@@ -224,7 +224,7 @@ $scope.logout=function(){
 .controller('updateStudentCtrl', function($scope, $http, $ionicHistory) {
 
   $scope.updateStudent = function(){
-    $http.post("http://http://localhost/ionic/CRUD/update_student2.php",
+    $http.post("http://202.29.230.252/ionic_apis/CRUD/update_student2.php",
       {
         'code':$scope.code,
         'name':$scope.name,
@@ -252,7 +252,7 @@ function ($scope,$rootScope,$state,$stateParams,$http,$ionicPopup,$ionicModal) {
   $scope.input =function(){
     $http(
       {
-        url: "http://localhost/ionic_api/inputhome.php",
+        url: "http://202.29.230.252/ionic_apis/inputhome.php",
         method:'post',
             data: {
 
@@ -326,7 +326,7 @@ function ($scope, $stateParams) {
 $interval(function(){
      $http(
         {
-        url: "http://localhost/ionic_api/showhome.php",
+        url: "http://202.29.230.252/ionic_apis/showhome.php",
         //url: "http://202.29.228.250/ionic_api/login.php",
         method:'post',
             data: {
@@ -380,7 +380,7 @@ $scope.logout=function(){
 .controller('updateStudentCtrl', function($scope, $http, $ionicHistory) {
 
   $scope.updateStudent = function(){
-    $http.post("http://localhost/ionic_api/showhome.php",
+    $http.post("http://202.29.230.252/ionic_apis/showhome.php",
       {
         'teacher_code':$scope.teacher_code,
         'std_code':$scope.std_code,
@@ -418,7 +418,7 @@ function ($scope,$rootScope,$state,$stateParams,$http,$ionicPopup,$ionicModal) {
   $scope.Signup =function(){
     $http(
       {
-        url: "http://localhost/ionic_api/signup.php",
+        url: "hhttp://202.29.230.252/ionic_apis/signup.php",
         method:'post',
             data: {
                   pass: $scope.usr.pass,
@@ -464,7 +464,7 @@ $scope.post = function(topic){
 topic['picture'] =$scope.imgURI;
 $scope.topic={};
 //console.log(topic);
-  $http.post("http://localhost/ionic_pic/newtopic.php",
+  $http.post("http://202.29.230.252/ionic_apis/newtopic.php",
     {
       'data':topic,
             message: $scope.topic.message,

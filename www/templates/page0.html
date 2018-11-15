@@ -1,4 +1,4 @@
-<ion-view title="ยืนยันการเยี่ยมบ้าน" id="page11">
+<ion-view title="รายงานการเยี่ยมบ้าน" id="page11">
   <ion-content padding="true" class="has-header">
     <div id="page0-markdown22" class="show-list-numbers-and-dots">
     <div>
@@ -8,12 +8,17 @@
       <div class="item item-body">
     <ion-item ng-repeat="x in model_object | filter: searchItem" >
     <p style="color:#000000;"><center>
-        <strong>ยืนยันการเยี่ยมบ้าน</strong></center>
+        <div class="item item-avatar">
+      <img src="img/{{x.std_code}}.jpg">
+       <h2>  {{x.std_code}}</h2>
+      <p> {{x.name}}</p>
+     </div>
+        <strong> <p></strong></center>
       </p>
     <h2>ปีการศึกษา</h2>
     <p>{{ x.year}}</p>
-    <img class="full-image" src="http://localhost/ionic_pic/upload/{{ x.picture}}">
-    <h2>ข้อความ</h2>
+    <img class="full-image" src="img/{{x.std_code}}.jpg">
+    <h2>รายละเอียด</h2>
     <p>{{ x.title}}</p>
     
     <h2>เพื่อนสนิทของผู้เรียน คือ</h2>
